@@ -1,1 +1,15 @@
 
+import re
+
+def check_string(s):
+    pattern = "^[a-zA-Z]+$"
+
+    if re.match(pattern, s):
+        return "String contains only the given set of characters"
+    else:
+        return "String contains other characters"
+
+s = input("Enter a string: ")
+
+print(check_string(s))
+
