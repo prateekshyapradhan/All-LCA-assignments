@@ -1,1 +1,23 @@
 
+import numpy as np
+
+def matrix_addition():
+    print("Enter elements of first matrix:")
+    a = np.array([[1, 2], [3, 4]])
+
+    print("Enter elements of second matrix:")
+    b = np.array([[5, 6], [7, 8]])
+
+    print("First Matrix:")
+    print(a)
+
+    print("Second Matrix:")
+    print(b)
+
+    c = a + b
+
+    print("Addition of two matrices:")
+    print(c)
+
+matrix_addition()
+
