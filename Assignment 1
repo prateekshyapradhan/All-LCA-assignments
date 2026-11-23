@@ -1,1 +1,55 @@
 
+# LIST OPERATIONS
+
+def list_operations():
+    a = [10, 20, 30, 40, 50]
+    
+    print("Original List:", a)
+    
+    a.append(60)
+    print("After Append:", a)
+    
+    a.remove(30)
+    print("After Remove:", a)
+    
+    a.sort()
+    print("After Sort:", a)
+
+
+# TUPLE OPERATIONS
+
+def tuple_operations():
+    t = (10, 20, 30, 20, 40)
+    
+    print("\nOriginal Tuple:", t)
+    
+    print("Length:", len(t))
+    
+    print("Count of 20:", t.count(20))
+    
+    print("Index of 30:", t.index(30))
+
+
+# DICTIONARY OPERATIONS
+
+def dictionary_operations():
+    d = {
+        "name": "Rahul",
+        "age": 18,
+        "course": "CSE"
+    }
+    
+    print("\nOriginal Dictionary:", d)
+    
+    d["city"] = "Pune"
+    print("After Adding:", d)
+    
+    d["age"] = 19
+    print("After Updating:", d)
+    
+    d.pop("course")
+    print("After Removing:", d)
+list_operations()
+tuple_operations()
+dictionary_operations()
+
