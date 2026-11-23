@@ -1,1 +1,11 @@
+def right_triangle(a, b, c):
+    if a*a + b*b == c*c or a*a + c*c == b*b or b*b + c*c == a*a:
+        return "Right angled triangle"
+    else:
+        return "Not a right angled triangle"
 
+a = int(input("Enter first side: "))
+b = int(input("Enter second side: "))
+c = int(input("Enter third side: "))
+
+print(right_triangle(a, b, c))
